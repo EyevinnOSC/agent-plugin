@@ -1,0 +1,9 @@
+{
+  "name": "osc",
+  "version": "1.0.0",
+  "description": "Open Source Cloud -- streaming infrastructure for Claude Code sessions",
+  "mcp": {
+    "servers": ["osc"]
+  },
+  "skills": ["live-streaming", "open-intercom"]
+}

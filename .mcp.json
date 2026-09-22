@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "osc": {
+      "type": "http",
+      "url": "https://mcp.osaas.io/mcp/operator"
+    }
+  }
+}
