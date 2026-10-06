@@ -55,7 +55,7 @@ override entry to your own `.mcp.json` (not the plugin's committed file):
   "mcpServers": {
     "osc": {
       "type": "http",
-      "url": "https://mcp.osaas.io/mcp/operator",
+      "url": "https://mcp.osaas.io/mcp",
       "headers": {
         "Authorization": "Bearer ${OSC_PAT}"
       }
