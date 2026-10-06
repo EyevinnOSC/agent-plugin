@@ -1,8 +1,20 @@
 {
-  "name": "osc",
-  "title": "Open Source Cloud",
-  "description": "Provision and manage live streaming and open intercom services via Open Source Cloud",
-  "source": ".",
-  "version": "1.0.0",
-  "skills": ["live-streaming", "open-intercom"]
+  "name": "agent-plugin",
+  "owner": {
+    "name": "Eyevinn Technology",
+    "url": "https://www.osaas.io"
+  },
+  "metadata": {
+    "description": "Open Source Cloud plugins for Claude Code"
+  },
+  "plugins": [
+    {
+      "name": "osc",
+      "source": "./",
+      "description": "Provision and manage live streaming and open intercom services via Open Source Cloud",
+      "version": "1.0.0",
+      "category": "infrastructure",
+      "keywords": ["streaming", "hls", "rtmp", "webrtc", "intercom", "mcp"]
+    }
+  ]
 }

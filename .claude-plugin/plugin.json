@@ -1,9 +1,13 @@
 {
   "name": "osc",
   "version": "1.0.0",
-  "description": "Open Source Cloud -- streaming infrastructure for Claude Code sessions",
-  "mcp": {
-    "servers": ["osc"]
+  "description": "Open Source Cloud: provision live streaming and open intercom infrastructure from Claude Code",
+  "author": {
+    "name": "Eyevinn Technology",
+    "url": "https://www.osaas.io"
   },
-  "skills": ["live-streaming", "open-intercom"]
+  "homepage": "https://www.osaas.io",
+  "repository": "https://github.com/EyevinnOSC/agent-plugin",
+  "license": "MIT",
+  "keywords": ["streaming", "hls", "rtmp", "webrtc", "intercom", "mcp"]
 }
