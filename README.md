@@ -50,25 +50,12 @@ retention terms.
 
 ## Troubleshooting
 
-**OAuth prompt does not appear or complete.** If your client cannot complete the OAuth flow, add a local
-override entry to your own `.mcp.json` (not the plugin's committed file):
+**OAuth prompt does not appear or complete.** Run `/mcp`, select `osc`, and choose to authenticate again. The
+sign-in opens in your browser at app.osaas.io. If the browser does not open, copy the URL that Claude Code
+prints and open it yourself.
 
-```json
-{
-  "mcpServers": {
-    "osc": {
-      "type": "http",
-      "url": "https://mcp.osaas.io/mcp",
-      "headers": {
-        "Authorization": "Bearer ${OSC_PAT}"
-      }
-    }
-  }
-}
-```
-
-Set `OSC_PAT` in your environment to a Personal Access Token from
-[app.osaas.io](https://app.osaas.io) (Settings > Access Tokens). Do not commit tokens to any file.
+**Tools missing after install.** Run `/reload-plugins`, or restart Claude Code, and check that `osc` shows as
+connected in `/mcp`.
 
 ## License
 
