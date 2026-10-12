@@ -9,5 +9,16 @@
   "homepage": "https://www.osaas.io",
   "repository": "https://github.com/EyevinnOSC/agent-plugin",
   "license": "MIT",
-  "keywords": ["deploy", "hosting", "streaming", "hls", "rtmp", "webrtc", "intercom", "mcp"]
+  "keywords": [
+    "deploy",
+    "hosting",
+    "streaming",
+    "hls",
+    "rtmp",
+    "webrtc",
+    "intercom",
+    "mcp"
+  ],
+  "icon": "./.claude-plugin/icon.png",
+  "privacyPolicyUrl": "https://www.osaas.io/privacy"
 }
