@@ -12,7 +12,7 @@
       "name": "osc",
       "source": "./",
       "description": "Deploy your repos and provision live streaming and open intercom services via Open Source Cloud",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "category": "infrastructure",
       "keywords": ["deploy", "hosting", "streaming", "hls", "rtmp", "webrtc", "intercom", "mcp"]
     }
