@@ -38,7 +38,7 @@ Three services, created in this exact order:
 1. Call `osc_search_tools` with the query `"wrtc sfu"` to confirm `eyevinn-docker-wrtc-sfu` is available and
    retrieve its required fields.
 
-2. Call `osc_call_tool` with `create-service-instance` to create the SFU:
+2. Call `osc_write_tool` with `create-service-instance` to create the SFU:
    - `serviceId`: `"eyevinn-docker-wrtc-sfu"`
    - `name`: a name of the user's choice
 
@@ -50,7 +50,7 @@ Three services, created in this exact order:
    `http://<sfu-host>:8080` -- plain HTTP with the explicit port, **no credentials in this URL**. The API key
    goes in a separate field.
 
-4. Call `osc_search_tools` with `"couchdb"` and then call `osc_call_tool` with `create-service-instance` to
+4. Call `osc_search_tools` with `"couchdb"` and then call `osc_write_tool` with `create-service-instance` to
    create the database:
    - `serviceId`: `"apache-couchdb"` (preferred) or `"birme-osc-mongodb"`
    - `name`: a name of the user's choice
@@ -64,7 +64,7 @@ Three services, created in this exact order:
 6. Call `osc_search_tools` with `"intercom manager"` to confirm `eyevinn-intercom-manager` is available and
    retrieve its required fields.
 
-7. Call `osc_call_tool` with `create-service-instance` to create the intercom manager:
+7. Call `osc_write_tool` with `create-service-instance` to create the intercom manager:
    - `serviceId`: `"eyevinn-intercom-manager"`
    - `name`: a name of the user's choice
    - `smbUrl`: the SFU URL with port 8080, for example `http://<sfu-host>:8080` -- plain URL only, no API key

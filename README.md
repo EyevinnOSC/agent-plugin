@@ -1,17 +1,19 @@
 # OSC Plugin for Claude Code
 
-Deploy and manage live streaming and open intercom infrastructure on
+Deploy your own apps and manage live streaming and open intercom infrastructure on
 [Open Source Cloud](https://www.osaas.io) directly from your Claude Code session.
 
-The plugin connects Claude Code to OSC's operator MCP surface -- three curated tools that cover service
+The plugin connects Claude Code to OSC's operator MCP surface -- curated tools that cover service
 discovery, provisioning, and platform architecture guidance:
 
 - `osc_search_tools` -- search the OSC service catalog by keyword
-- `osc_call_tool` -- create, describe, and delete service instances
+- `osc_call_tool` -- read-only calls: describe instances, check status, read logs
+- `osc_write_tool` -- calls that create, change or delete something
 - `ask-osc-architect` -- natural-language OSC architecture and service selection guidance (see Disclosure below)
 
-Two guided skills are included:
+Three guided skills are included:
 
+- **Deploy My Repo** -- put a git repository live as a private OSC My App and get its URL
 - **Live Streaming** -- RTMP-to-HLS streaming stack using `eyevinn-live-encoding`
 - **Open Intercom** -- self-hosted WebRTC intercom using `eyevinn-intercom-manager`, a WebRTC SFU, and CouchDB
 
@@ -30,6 +32,7 @@ Then run `/mcp` and approve the OSC sign-in when prompted.
 
 After installation, invoke a skill by name in chat:
 
+- "Deploy this repo on OSC" -- triggers `deploy-my-repo`
 - "Set up the live streaming stack" -- triggers `live-streaming`
 - "Set up Open Intercom" -- triggers `open-intercom`
 
