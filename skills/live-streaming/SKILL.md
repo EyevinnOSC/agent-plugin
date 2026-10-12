@@ -32,7 +32,7 @@ use) and stop. Do not retry the call.
 
 1. Call `osc_search_tools` to confirm `eyevinn-live-encoding` is available and retrieve its required fields.
    Only `name` is required.
-2. Call `osc_call_tool` with `create-service-instance`, providing `serviceId: "eyevinn-live-encoding"` and a
+2. Call `osc_write_tool` with `create-service-instance`, providing `serviceId: "eyevinn-live-encoding"` and a
    `name` of the user's choice (lowercase, alphanumeric, hyphens allowed).
 3. Poll the instance status using `osc_call_tool` with `describe-service-instance` until the instance reports
    `running`. This typically takes 60-120 seconds.
